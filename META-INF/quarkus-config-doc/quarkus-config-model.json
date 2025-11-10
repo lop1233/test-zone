@@ -1,0 +1,539 @@
+{
+  "configRoots" : [ {
+    "extension" : {
+      "artifactId" : "quarkus-hibernate-orm",
+      "detected" : true,
+      "groupId" : "io.quarkus",
+      "guideUrl" : "https://quarkus.io/guides/hibernate-orm",
+      "name" : "Hibernate ORM",
+      "nameSource" : "EXTENSION_METADATA"
+    },
+    "items" : [ {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+      "additionalPaths" : [ {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+        "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__ACTIVE",
+        "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".active"
+      } ],
+      "defaultValue" : "'true' if Hibernate ORM is enabled; 'false' otherwise",
+      "optional" : true,
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+        "environmentVariable" : "QUARKUS_HIBERNATE_ORM_ACTIVE",
+        "property" : "quarkus.hibernate-orm.active"
+      },
+      "phase" : "RUN_TIME",
+      "sourceElementName" : "active",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit",
+      "type" : "java.lang.Boolean",
+      "typeDescription" : "boolean",
+      "withinMap" : true
+    }, {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection",
+      "items" : [ {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__SCHEMA_MANAGEMENT_STRATEGY",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".schema-management.strategy"
+        } ],
+        "converted" : true,
+        "defaultValue" : "none",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_SCHEMA_MANAGEMENT_STRATEGY",
+          "property" : "quarkus.hibernate-orm.schema-management.strategy"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "strategy",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitSchemaManagement",
+        "type" : "java.lang.String",
+        "typeDescription" : "string",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__SCHEMA_MANAGEMENT_CREATE_SCHEMAS",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".schema-management.create-schemas"
+        } ],
+        "defaultValue" : "false",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_SCHEMA_MANAGEMENT_CREATE_SCHEMAS",
+          "property" : "quarkus.hibernate-orm.schema-management.create-schemas"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "createSchemas",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitSchemaManagement",
+        "type" : "boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__SCHEMA_MANAGEMENT_HALT_ON_ERROR",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".schema-management.halt-on-error"
+        } ],
+        "defaultValue" : "false",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_SCHEMA_MANAGEMENT_HALT_ON_ERROR",
+          "property" : "quarkus.hibernate-orm.schema-management.halt-on-error"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "haltOnError",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitSchemaManagement",
+        "type" : "boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      } ],
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection$SectionPath",
+        "property" : "quarkus.hibernate-orm.schema-management"
+      },
+      "sourceElementName" : "schemaManagement",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit",
+      "type" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitSchemaManagement"
+    }, {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection",
+      "items" : [ {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__DATABASE_GENERATION",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".database.generation"
+        } ],
+        "deprecation" : {
+          "since" : "3.22"
+        },
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_DATABASE_GENERATION",
+          "property" : "quarkus.hibernate-orm.database.generation"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "generation",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabaseGeneration",
+        "type" : "java.lang.String",
+        "typeDescription" : "string",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__DATABASE_GENERATION_CREATE_SCHEMAS",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".database.generation.create-schemas"
+        } ],
+        "deprecation" : {
+          "since" : "3.22"
+        },
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_DATABASE_GENERATION_CREATE_SCHEMAS",
+          "property" : "quarkus.hibernate-orm.database.generation.create-schemas"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "createSchemas",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabaseGeneration",
+        "type" : "java.lang.Boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__DATABASE_GENERATION_HALT_ON_ERROR",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".database.generation.halt-on-error"
+        } ],
+        "deprecation" : {
+          "since" : "3.22"
+        },
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_DATABASE_GENERATION_HALT_ON_ERROR",
+          "property" : "quarkus.hibernate-orm.database.generation.halt-on-error"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "haltOnError",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabaseGeneration",
+        "type" : "java.lang.Boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__DATABASE_DEFAULT_CATALOG",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".database.default-catalog"
+        } ],
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_DATABASE_DEFAULT_CATALOG",
+          "property" : "quarkus.hibernate-orm.database.default-catalog"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "defaultCatalog",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabase",
+        "type" : "java.lang.String",
+        "typeDescription" : "string",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__DATABASE_DEFAULT_SCHEMA",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".database.default-schema"
+        } ],
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_DATABASE_DEFAULT_SCHEMA",
+          "property" : "quarkus.hibernate-orm.database.default-schema"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "defaultSchema",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabase",
+        "type" : "java.lang.String",
+        "typeDescription" : "string",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__DATABASE_VERSION_CHECK_ENABLED",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".database.version-check.enabled"
+        } ],
+        "defaultValue" : "`false` if starting offline (see `start-offline`), `true` otherwise",
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_DATABASE_VERSION_CHECK_ENABLED",
+          "property" : "quarkus.hibernate-orm.database.version-check.enabled"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "versionCheckEnabled",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabase",
+        "type" : "java.lang.Boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__DATABASE_START_OFFLINE",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".database.start-offline"
+        } ],
+        "defaultValue" : "false",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_DATABASE_START_OFFLINE",
+          "property" : "quarkus.hibernate-orm.database.start-offline"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "startOffline",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabase",
+        "type" : "boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      } ],
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection$SectionPath",
+        "property" : "quarkus.hibernate-orm.database"
+      },
+      "sourceElementName" : "database",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit",
+      "type" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitDatabase"
+    }, {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection",
+      "items" : [ {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__SCRIPTS_GENERATION",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".scripts.generation"
+        } ],
+        "converted" : true,
+        "defaultValue" : "none",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_SCRIPTS_GENERATION",
+          "property" : "quarkus.hibernate-orm.scripts.generation"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "generation",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitScriptGeneration",
+        "type" : "java.lang.String",
+        "typeDescription" : "string",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__SCRIPTS_GENERATION_CREATE_TARGET",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".scripts.generation.create-target"
+        } ],
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_SCRIPTS_GENERATION_CREATE_TARGET",
+          "property" : "quarkus.hibernate-orm.scripts.generation.create-target"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "createTarget",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitScriptGeneration",
+        "type" : "java.lang.String",
+        "typeDescription" : "string",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__SCRIPTS_GENERATION_DROP_TARGET",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".scripts.generation.drop-target"
+        } ],
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_SCRIPTS_GENERATION_DROP_TARGET",
+          "property" : "quarkus.hibernate-orm.scripts.generation.drop-target"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "dropTarget",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitScriptGeneration",
+        "type" : "java.lang.String",
+        "typeDescription" : "string",
+        "withinMap" : true
+      } ],
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection$SectionPath",
+        "property" : "quarkus.hibernate-orm.scripts"
+      },
+      "sourceElementName" : "scripts",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit",
+      "type" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitScripts"
+    }, {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection",
+      "items" : [ {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__LOG_SQL",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".log.sql"
+        } ],
+        "defaultValue" : "false",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_LOG_SQL",
+          "property" : "quarkus.hibernate-orm.log.sql"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "sql",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitLog",
+        "type" : "boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__LOG_FORMAT_SQL",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".log.format-sql"
+        } ],
+        "defaultValue" : "true",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_LOG_FORMAT_SQL",
+          "property" : "quarkus.hibernate-orm.log.format-sql"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "formatSql",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitLog",
+        "type" : "boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__LOG_HIGHLIGHT_SQL",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".log.highlight-sql"
+        } ],
+        "defaultValue" : "true",
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_LOG_HIGHLIGHT_SQL",
+          "property" : "quarkus.hibernate-orm.log.highlight-sql"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "highlightSql",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitLog",
+        "type" : "boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__LOG_JDBC_WARNINGS",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".log.jdbc-warnings"
+        } ],
+        "defaultValue" : "depends on dialect",
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_LOG_JDBC_WARNINGS",
+          "property" : "quarkus.hibernate-orm.log.jdbc-warnings"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "jdbcWarnings",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitLog",
+        "type" : "java.lang.Boolean",
+        "typeDescription" : "boolean",
+        "withinMap" : true
+      }, {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__LOG_QUERIES_SLOWER_THAN_MS",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".log.queries-slower-than-ms"
+        } ],
+        "optional" : true,
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_LOG_QUERIES_SLOWER_THAN_MS",
+          "property" : "quarkus.hibernate-orm.log.queries-slower-than-ms"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "queriesSlowerThanMs",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitLog",
+        "type" : "java.lang.Long",
+        "typeDescription" : "long",
+        "withinMap" : true
+      } ],
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection$SectionPath",
+        "property" : "quarkus.hibernate-orm.log"
+      },
+      "sourceElementName" : "log",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit",
+      "type" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitLog"
+    }, {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection",
+      "items" : [ {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+        "enum" : true,
+        "additionalPaths" : [ {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__FLUSH_MODE",
+          "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".flush.mode"
+        } ],
+        "defaultValue" : "auto",
+        "enumAcceptedValues" : {
+          "qualifiedName" : "org.hibernate.FlushMode",
+          "values" : {
+            "ALWAYS" : {
+              "configValue" : "always"
+            },
+            "AUTO" : {
+              "configValue" : "auto"
+            },
+            "COMMIT" : {
+              "configValue" : "commit"
+            },
+            "MANUAL" : {
+              "configValue" : "manual"
+            }
+          }
+        },
+        "path" : {
+          "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+          "environmentVariable" : "QUARKUS_HIBERNATE_ORM_FLUSH_MODE",
+          "property" : "quarkus.hibernate-orm.flush.mode"
+        },
+        "phase" : "RUN_TIME",
+        "sourceElementName" : "mode",
+        "sourceElementType" : "METHOD",
+        "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitFlush",
+        "type" : "org.hibernate.FlushMode",
+        "typeDescription" : "FlushMode",
+        "withinMap" : true
+      } ],
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigSection$SectionPath",
+        "property" : "quarkus.hibernate-orm.flush"
+      },
+      "sourceElementName" : "flush",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit",
+      "type" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit.HibernateOrmConfigPersistenceUnitFlush"
+    }, {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+      "additionalPaths" : [ {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+        "environmentVariable" : "QUARKUS_HIBERNATE_ORM__PERSISTENCE_UNIT_NAME__UNSUPPORTED_PROPERTIES__FULL_PROPERTY_KEY_",
+        "property" : "quarkus.hibernate-orm.\"persistence-unit-name\".unsupported-properties.\"full-property-key\""
+      } ],
+      "map" : true,
+      "mapKey" : "full-property-key",
+      "optional" : true,
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+        "environmentVariable" : "QUARKUS_HIBERNATE_ORM_UNSUPPORTED_PROPERTIES__FULL_PROPERTY_KEY_",
+        "property" : "quarkus.hibernate-orm.unsupported-properties.\"full-property-key\""
+      },
+      "phase" : "RUN_TIME",
+      "sourceElementName" : "unsupportedProperties",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfigPersistenceUnit",
+      "type" : "java.util.Map",
+      "typeDescription" : "Map<String,String>",
+      "withinMap" : true
+    }, {
+      "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty",
+      "defaultValue" : "true",
+      "path" : {
+        "@class" : "io.quarkus.annotation.processor.documentation.config.model.ConfigProperty$PropertyPath",
+        "environmentVariable" : "QUARKUS_HIBERNATE_ORM_REQUEST_SCOPED_ENABLED",
+        "property" : "quarkus.hibernate-orm.request-scoped.enabled"
+      },
+      "phase" : "RUN_TIME",
+      "sourceElementName" : "requestScopedSessionEnabled",
+      "sourceElementType" : "METHOD",
+      "sourceType" : "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfig",
+      "type" : "boolean",
+      "typeDescription" : "boolean"
+    } ],
+    "prefix" : "quarkus.hibernate-orm",
+    "qualifiedNames" : [ "io.quarkus.hibernate.orm.runtime.HibernateOrmRuntimeConfig" ],
+    "topLevelPrefix" : "quarkus.hibernate-orm"
+  } ]
+}
